@@ -1,0 +1,9 @@
+CREATE DATABASE perntodo;
+
+CREATE TABLE todo(
+    todo_id SERIAL PRIMARY KEY,
+    description VARCHAR(255),
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+    category VARCHAR(255)
+)
